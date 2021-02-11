@@ -15,6 +15,8 @@
 		E4744F1025D4C2AE008BC627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4744F0E25D4C2AE008BC627 /* LaunchScreen.storyboard */; };
 		E4744F1B25D4C2AF008BC627 /* DepthSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4744F1A25D4C2AF008BC627 /* DepthSampleTests.swift */; };
 		E4744F2625D4C2AF008BC627 /* DepthSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4744F2525D4C2AF008BC627 /* DepthSampleUITests.swift */; };
+		E4744F3725D4D0E6008BC627 /* PhotoLibraryAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4744F3625D4D0E6008BC627 /* PhotoLibraryAuthorization.swift */; };
+		E4744F3F25D4DA16008BC627 /* DebugUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4744F3E25D4DA16008BC627 /* DebugUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E4744F2125D4C2AF008BC627 /* DepthSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepthSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4744F2525D4C2AF008BC627 /* DepthSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthSampleUITests.swift; sourceTree = "<group>"; };
 		E4744F2725D4C2AF008BC627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4744F3625D4D0E6008BC627 /* PhotoLibraryAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAuthorization.swift; sourceTree = "<group>"; };
+		E4744F3E25D4DA16008BC627 /* DebugUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		E4744F0225D4C2AD008BC627 /* DepthSample */ = {
 			isa = PBXGroup;
 			children = (
+				E4744F3E25D4DA16008BC627 /* DebugUtility.swift */,
 				E4744F0325D4C2AD008BC627 /* AppDelegate.swift */,
 				E4744F0525D4C2AD008BC627 /* SceneDelegate.swift */,
 				E4744F0725D4C2AD008BC627 /* ViewController.swift */,
+				E4744F3625D4D0E6008BC627 /* PhotoLibraryAuthorization.swift */,
 				E4744F0925D4C2AD008BC627 /* Main.storyboard */,
 				E4744F0C25D4C2AE008BC627 /* Assets.xcassets */,
 				E4744F0E25D4C2AE008BC627 /* LaunchScreen.storyboard */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4744F3F25D4DA16008BC627 /* DebugUtility.swift in Sources */,
 				E4744F0825D4C2AD008BC627 /* ViewController.swift in Sources */,
 				E4744F0425D4C2AD008BC627 /* AppDelegate.swift in Sources */,
+				E4744F3725D4D0E6008BC627 /* PhotoLibraryAuthorization.swift in Sources */,
 				E4744F0625D4C2AD008BC627 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H8RBA4DXP;
 				INFOPLIST_FILE = DepthSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H8RBA4DXP;
 				INFOPLIST_FILE = DepthSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

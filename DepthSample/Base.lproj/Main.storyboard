@@ -1,24 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DepthSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KuR-IB-y3e">
+                                <rect key="frame" x="0.0" y="172" width="414" height="552"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KuR-IB-y3e" secondAttribute="height" multiplier="3:4" id="fbE-Th-enj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wbj-N9-KxV">
+                                <rect key="frame" x="80" y="724" width="254" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ege-79-dJx">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="DOF-KF-yyH"/>
+                                            <constraint firstAttribute="height" constant="80" id="eJV-Zc-PIw"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="photo.on.rectangle.angled" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedSelectPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uId-UL-hXy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNi-HH-Hhj">
+                                        <rect key="frame" x="174" y="0.0" width="80" height="80"/>
+                                        <state key="normal" title="Button" image="graduationcap.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedAcademic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RQ9-sU-snc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eNi-HH-Hhj" firstAttribute="width" secondItem="Ege-79-dJx" secondAttribute="width" id="iq9-TA-sfE"/>
+                                    <constraint firstItem="eNi-HH-Hhj" firstAttribute="height" secondItem="Ege-79-dJx" secondAttribute="height" id="nCK-xt-8en"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KuR-IB-y3e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Y8-OL-uxR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbj-N9-KxV" secondAttribute="trailing" constant="80" id="X0l-Hr-I88"/>
+                            <constraint firstItem="KuR-IB-y3e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XNB-DT-q4q"/>
+                            <constraint firstItem="KuR-IB-y3e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="i2l-Kt-oAI"/>
+                            <constraint firstItem="wbj-N9-KxV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="mHx-FB-1Vw"/>
+                            <constraint firstItem="KuR-IB-y3e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wNB-0A-VqY"/>
+                            <constraint firstItem="wbj-N9-KxV" firstAttribute="top" secondItem="KuR-IB-y3e" secondAttribute="bottom" id="zkg-46-mMO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="selectedPhotoImageView" destination="KuR-IB-y3e" id="AxP-7k-lwV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="graduationcap.fill" catalog="system" width="128" height="108"/>
+        <image name="photo.on.rectangle.angled" catalog="system" width="128" height="101"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
